@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="icon" type="image/png" sizes="35x35" href="/image/favicon.png">
+   <style>
+    html,
+        body {
+          height: 100%;
+        }
+    
+        body {
+          background: #eee;
+          margin: 0;
+          padding: 0;
+        }
+      </style>
+</head>
+<body>
+    <div id="header_wrap">
+        <div class="header">
+        <h1 class="logo"><a href="./index.html" target="_blank">
+            <img src="./image/logo.png" alt="logo">
+        </a></h1>
+        <ul class="gnb">
+            <li><a href="./index.html">HOME</a></li>
+            <li><a href="#">COMPANY</a>
+              <ul class="sub">
+                <li><a href="#">회사소개</a></li>
+                <li><a href="#">회사연혁</a></li>
+                <li><a href="#">사업영역</a></li>
+                <li><a href="https://maps.app.goo.gl/Dz52YhrYUAUGByW59" target="_blank">
+                  contact us</a></li>
+              </ul></li>
+            <li><a href="#">CHARACTER</a>
+            <ul class="sub">
+              <li><a href="./image/02.png" target="_blank">해변냥이</a></li>
+              <li><a href="./image/커리어우먼.png" target="_blank">CAREER WOMAN</a></li>
+              <li><a href="./image/꽃냥이.png" target="_blank">꽃냥이</a></li>
+              <li><a href="./image/솜털기사.png" target="_blank">솜털기사</a></li>
+              <li><a href="./image/요정.png" target="_blank">요정</a></li>
+            </ul></li>
+            <li><a href="#">PLACE</a>
+            <ul class="sub">
+              <li><a href="#">SUBMENU1</a></li>
+              <li><a href="#">SUBMENU2</a></li>
+              <li><a href="#">SUBMENU3</a></li>
+              <li><a href="#">SUBMENU4</a></li>
+            </ul></li>
+            <li><a href="#">RECRUIT</a>
+              <ul class="sub">
+              <li><a href="#">직무소개</a></li>
+              <li><a href="#">복리후생</a></li>
+              <li><a href="#">채용공고</a></li>
+              <li><a href="#">나도일하고싶당</a></li>
+            </ul></li>
+        </ul>
+    </div>
+    </div>
+<!-- header end -->
+<div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide swiper1"><img src="./image/main1.png" alt="main1"></div>
+      <div class="swiper-slide"><img src="./image/main2.png" alt="main2"></div>
+      <div class="swiper-slide"><img src="./image/main3.png" alt="main3"></div>
+      <div class="swiper-slide swiper2"><img src="./image/main4.png" alt="main4"></div>
+      <div class="swiper-slide swiper3"><img src="./image/main5.png" alt="main5"></div>
+    </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-pagination"></div>
+  </div>
+  <!-- swiper end -->
+   <div id="tap_wrap">
+    <ul class="board">
+        <li class="on">
+            <a href="#">공지사항</a>
+            <div class="notice">
+                <ul>
+                    <li class="click"><a href="#">지금 바로가기</a></li>
+                    <li><a href="#">귀엽고 아기자기한 캐릭터들이 듬뿍</a></li>
+                    <li><a href="#">모브랜드와 함께</a></li>
+                    <li><a href="#">즐거운여행을 떠나요!</a></li>
+                </ul>
+                <h1 class="book"><a href="#"><img src="./image/a-book-3040862_1280.jpg" alt="book"></a></h1>
+            </div>
+        </li>
+        <li>
+            <a href="#">프로모션</a>
+            <div class="gallery">
+                <ul>
+                    <li><a href="#">
+                        <img src="./image/1.png" alt="1">
+                        <img src="./image/2.png" alt="2">
+                        <img src="./image/3.jpg" alt="3">
+                        <img src="./image/4.png" alt="3">
+                        <img src="./image/5.png" alt="4">
+                    </a></li>
+                </ul>
+            </div>
+        </li>
+        <div class="popup">
+            <img src="./image/01.png" alt="01">
+            <a href="#" class="close">닫기</a>
+         </div>
+    </ul>
+   </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- CDN방식으로 들고온 제이쿼리 -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+          spaceBetween: 30,
+          centeredSlides: true,
+          autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+          },
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+        });
+      </script>
+
+    <script src="./js/script.js"></script>
+    <!-- 내가 만든 제이쿼리 -->
+</body>
+</html>
